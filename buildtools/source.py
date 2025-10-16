@@ -8,12 +8,12 @@ data = response.json()
 
 latestrelease = data["latest"]["release"]
 
-os.system("git clone https://github.com/FabricMC/yarn")
+# os.system("git clone https://github.com/FabricMC/yarn")
 
-os.system("cd yarn")
+# os.system("cd yarn")
 
-os.system(f"cd yarn && git checkout {latestrelease}")
+# os.system(f"cd yarn && git checkout {latestrelease}")
 
-os.system("cd yarn && ./gradlew mapNamedJar decompileCFR")
+# os.system("cd yarn && ./gradlew mapNamedJar decompileCFR")
 
-os.system("mv yarn/build/namedSrc ../src")
+os.system("mv yarn/build/namedSrc ./src")
