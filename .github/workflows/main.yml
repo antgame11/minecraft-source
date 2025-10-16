@@ -1,9 +1,13 @@
+# i swear i didnt chatgpt this ahh workflow(?)
 name: Auto Update Minecraft Source
 
 on:
   schedule:
     - cron: "0 3 * * *"  # runs daily at 3 AM UTC
   workflow_dispatch:      # allows manual runs too
+
+permissions:
+  contents: write
 
 jobs:
   update:
