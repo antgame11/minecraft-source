@@ -16,4 +16,6 @@ os.system(f"cd yarn && git checkout {latestrelease}")
 
 os.system("cd yarn && ./gradlew mapNamedJar decompileCFR")
 
+os.system("rm -rf src")
+
 os.system("mv yarn/build/namedSrc ./src")
