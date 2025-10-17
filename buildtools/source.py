@@ -13,6 +13,14 @@ latestrelease = data["latest"]["release"]
 
 os.system(f"git switch {latestrelease} || git switch -c {latestrelease}")
 
+os.system("rm -rf *")
+
+with open("README.md", "w") as f:
+    f.write(f'# Minecraft {latestrelease} Source Code')
+
+with open(".gitignore", "w") as f:
+    f.write('yarn/')
+
 os.system("git clone https://github.com/FabricMC/yarn")
 
 switchbranch = os.system(f"cd yarn && git switch {latestrelease}")

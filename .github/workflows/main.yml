@@ -38,4 +38,5 @@ jobs:
       - name: Run build script
         run: |
           echo "Running source.py..."
-          python3 ./buildtools/source.py
+          mv ./buildtools/source.py /tmp/source.py
+          python3 /tmp/source.py
