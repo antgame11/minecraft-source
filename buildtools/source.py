@@ -39,5 +39,5 @@ os.system(f"""
         git config --global user.email "actions@github.com"
         git add .
         git diff --cached --quiet && echo "No changes to commit." || \
-        (git commit -m "Mappings Update, {latestrelease}" && git push)
+        (git commit -m "Mappings Update, {latestrelease}" && git push --set-upstream origin {latestrelease})
           """)
