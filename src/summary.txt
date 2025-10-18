@@ -13,7 +13,7 @@ net.minecraft.nbt.NbtList
 ----------------------------
 
 scanList(java.io.DataInput net.minecraft.nbt.scanner.NbtScanner net.minecraft.nbt.NbtSizeTracker )
-  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [8[CASE], 4[SWITCH]], but top level block is 9[SWITCH]
+  Exception : org.benf.cfr.reader.util.ConfusedCFRException: Tried to end blocks [4[SWITCH], 8[CASE]], but top level block is 9[SWITCH]
 
 
 net.minecraft.client.gl.GlCommandEncoder
